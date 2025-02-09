@@ -1,0 +1,35 @@
+Overview
+Lab 6 focuses on utilizing PyTorch, a powerful library for building and training neural networks. You will first use PyTorch to optimize simple mathematical functions and then construct and train neural network models to tackle classification tasks, specifically using the Iris dataset.
+Objectives
+•	Learn how to implement and use PyTorch for computational tasks and model building.
+•	Explore optimization techniques and neural network training in PyTorch.
+•	Implement classification models and evaluate their performance on a standard dataset.
+Tasks and Instructions
+Problem 1: Optimization with PyTorch
+•	Objective: Use PyTorch to find a local minimum of the function f(x,y)=1−x−y+x2+2y2f(x, y) = 1 - x - y + x^2 + 2y^2f(x,y)=1−x−y+x2+2y2.
+•	Implementation:
+o	Define the function using PyTorch's tensor operations.
+o	Utilize gradient descent with the Adam optimizer to find the function's minimum.
+o	Determine a suitable stopping criterion based on the gradient's magnitude.
+Problem 2: Neural Network for Iris Classification
+•	Dataset Preparation:
+o	Load the Iris dataset and perform feature scaling using StandardScaler.
+o	Convert class labels to a one-hot encoded format.
+o	Split the data into training and testing sets.
+•	Model Construction:
+o	Build a neural network with one hidden layer using PyTorch's nn.Module.
+o	Use ReLU activation for the hidden layer and no activation for the output layer (use raw logits with cross-entropy loss).
+•	Model Training:
+o	Train the model using binary cross-entropy with logits (BCEWithLogitsLoss).
+o	Optimize the model using the Adam optimizer.
+o	Train for a sufficient number of epochs and output training progress.
+•	Model Testing:
+o	Evaluate the model's performance on the test set.
+o	Use appropriate metrics to assess accuracy.
+Deliverables
+•	A comprehensive Jupyter Notebook containing:
+o	All code implementations for the optimization task and neural network model.
+o	Detailed explanations of each step, including how PyTorch's features are utilized.
+o	Visualizations of training progress and results.
+•	A report within the notebook discussing the model's performance and any observations or challenges encountered during the lab.
+
