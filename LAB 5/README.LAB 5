@@ -1,0 +1,25 @@
+Overview
+In this lab, you'll focus on implementing and optimizing the k-nearest neighbors (KNN) classification method. Using the well-known Iris dataset, you will explore different variants of KNN and utilize GridSearchCV to find the most effective model parameters.
+Objectives
+•	Implement the nearest neighbors classification method.
+•	Explore and understand different variants of nearest neighbors.
+•	Learn how to optimize model parameters with GridSearchCV.
+•	Become familiar with the Iris dataset and its application in classification tasks.
+Tasks and Instructions
+Problem 1: Basic KNN and GridSearchCV
+•	Load the Iris dataset: Utilize sklearn.datasets.load_iris().
+•	Data Splitting: Divide the data into training and testing sets using train_test_split.
+•	KNN Model Fitting: Fit a 3-nearest neighbors model to the training data and evaluate its accuracy on the test set.
+•	Model Optimization: Use GridSearchCV to train KNN models with varying numbers of neighbors (from 2 to 8) using 3-fold cross-validation to determine the optimal number of neighbors based on average accuracy.
+Problem 2: Custom KNN Implementation
+•	Custom KNN Class: Implement a custom KNN object that is compatible with GridSearchCV, based on a provided template (myknn-template.py).
+•	Testing and Validation: Compare the performance of your custom KNN implementation with sklearn.neighbors.KNeighborsClassifier on the Iris dataset.
+•	Parameter Optimization: Use your custom KNN with GridSearchCV to find the optimal number of neighbors.
+Problem 3: Advanced KNN Variant
+•	Weighted Neighbors: Modify your KNN implementation to predict new values using a weighted average of the nearest neighbors, where weights are determined by an exponential decay function based on the distance from the query point (parameterized by λ).
+•	Parameter Tuning: Use GridSearchCV to select the best combination of the number of neighbors (k) and decay parameter (λ) for the weighted KNN method.
+Deliverables
+•	Code: Provide all Python scripts or Jupyter notebooks that include your implementations and experiments.
+•	Technical Report: Document your methodologies, experiments, and findings in a technical report. Include discussions about the choice of parameters, comparisons between different KNN variants, and any challenges you encountered.
+•	Results Visualization: Include plots showing the performance of different model configurations, particularly the results of your GridSearchCV experiments.
+
