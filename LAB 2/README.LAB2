@@ -1,0 +1,34 @@
+Overview
+you'll delvelop deeper into data science techniques with practical exercises that focus on understanding the nuances of model training and testing, implementing optimization algorithms like gradient descent from scratch, and encapsulating your algorithms in Python classes for modularity and reusability.
+Goals
+•	Understand the difference between training error and testing error.
+•	Learn data standardization techniques.
+•	Develop and implement a gradient descent algorithm in Python.
+•	Encapsulate the gradient descent algorithm as a Python class.
+•	Explore the Hoeffding bound in a simulated environment.
+Tasks and Instructions
+1.	Training and Test Error Exploration:
+o	Use the diabetes dataset from sklearn.datasets.
+o	Extend the dataset with polynomial features.
+o	Split the dataset into training and testing sets.
+o	Standardize the data using StandardScaler.
+o	Fit linear regression models with an increasing number of predictors and analyze how the training and testing errors evolve.
+o	Visualize the relationship between the number of predictors and model accuracy, and discuss the phenomena of overfitting and underfitting.
+2.	Gradient Descent Implementation:
+o	Implement the gradient descent algorithm to minimize the squared error loss function.
+o	Start with an initial guess and iteratively update your model parameters using the gradient of your loss function.
+o	Compare your results with sklearn's LinearRegression to validate your implementation.
+o	Modify your function to include practical enhancements like a maximum number of iterations and step size control.
+3.	Python Class for Gradient Descent:
+o	Encapsulate your gradient descent algorithm within a Python class, mimicking the structure of sklearn model classes.
+o	Include methods for fitting the model to data (fit) and predicting new values (predict).
+o	Ensure that your class is flexible enough to handle different initializations and stopping criteria.
+4.	Visualizing Hoeffding's Inequality:
+o	Simulate a scenario where you estimate the proportion of red marbles in an urn using sampled data.
+o	Vary your sample size and the bounds for the difference between the true proportion and the estimated proportion.
+o	Use the simulation to plot the actual probability of the estimate deviating from the true proportion against the theoretical bounds provided by Hoeffding's inequality.
+Deliverables
+•	A comprehensive Google Colab notebook that includes all code, outputs, and visualizations for the tasks described.
+•	A technical report (max. 5 pages) detailing your methods, observations, and conclusions for each part of the lab.
+•	Ensure all code is well-commented and organized for readability and ease of understanding.
+
