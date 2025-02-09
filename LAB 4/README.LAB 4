@@ -1,0 +1,26 @@
+Overview
+Lab 4 delves into advanced optimization techniques for solving regression problems, specifically focusing on the Lasso method and coordinate descent algorithm. You will explore the 
+theoretical aspects of Lasso regularization and implement these methods from scratch to enhance your understanding and application skills in handling large datasets with many predictors.
+Problem Descriptions and Tasks
+Problem 1: Lasso Parameter Experimentation
+•	Goal: Verify a theorem about the Lasso problem, which states that for a lasso parameter equal to λmax, the solution to the Lasso regularization problem is a zero vector.
+•	Tasks:
+o	Generate random datasets for X and y.
+o	Solve the Lasso problem using λmax as the regularization parameter.
+o	Verify that the solution vector β* is zero (considering numerical precision) through repeated experiments.
+Problem 2: Coordinate Descent for Least Squares
+•	Goal: Implement the coordinate descent method to solve standard and constrained least squares problems.
+•	Tasks:
+o	Implement the coordinate descent algorithm to solve the least squares problem and ensure it includes functionality to handle non-negativity constraints on the solution vector.
+o	Validate your implementation by comparing results with sklearn.linear_model.LinearRegression.
+o	Extend the implementation to enforce non-negativity constraints on the predictors and validate against sklearn's implementations.
+Problem 3: Coordinate Descent for Lasso
+•	Goal: Implement the coordinate descent method for the Lasso regression problem.
+•	Tasks:
+o	Develop a coordinate descent algorithm to solve the Lasso problem.
+o	Test and validate your implementation by comparing the Lasso coefficients with those obtained from sklearn.linear_model.Lasso.
+Deliverables
+•	Comprehensive Notebook: A detailed Jupyter Notebook containing all the implementations, explanations, and comparative analyses.
+•	Technical Documentation: Within the notebook, document the functionality of each part of your code and the theoretical basis of the algorithms implemented.
+•	Validation Results: Include sections in your notebook that demonstrate the correctness of your algorithms through comparisons with standard implementations in sklearn.
+
