@@ -1,0 +1,30 @@
+Overview
+In this lab, you'll explore the use of Lasso (Least Absolute Shrinkage and Selection Operator) for variable selection in datasets where the number of predictors (p) is much larger than the number of observations (n). You will learn how to implement Lasso using cross-validation to build robust predictive models, particularly focusing on a dataset involving gene expression data for breast cancer tumor samples.
+Goals
+•	Understand and apply Lasso for variable selection.
+•	Train Lasso models using cross-validation to optimize the selection of predictors.
+•	Implement and test linear regression models using selected variables.
+•	Analyze high-dimensional data where the number of predictors far exceeds the number of samples.
+Tasks and Instructions
+1.	Cross-Validation for Lasso:
+o	Write a function to perform K-fold cross-validation for the Lasso.
+o	Inputs should include the predictor matrix XXX, response vector yyy, number of folds KKK, and a vector of Lasso parameters alphasalphasalphas.
+o	Outputs should include the average and standard deviation of the cross-validation error for each Lasso parameter, and the best parameter values based on average error and the one standard deviation rule.
+2.	Gene Expression Data Analysis:
+o	Use the gene expression data (assay.csv) and response variable (pheno.csv) provided.
+o	Split the data into training and test sets.
+o	Train a Lasso model on the training set to predict the binary response variable, utilizing the cross-validation function you developed.
+o	Analyze which genes are most predictive of the response according to the Lasso model.
+o	Fit a linear regression model using only the genes selected by the Lasso and assess its predictive accuracy on the test set.
+3.	Repeatability of Model Performance:
+o	Repeat the training and testing process using 100 random train/test splits.
+o	Compute the average prediction error and its standard deviation across these repetitions to evaluate the stability and reliability of your model.
+Deliverables
+•	A comprehensive Google Colab notebook that includes:
+o	The implementation of the cross-validation function for Lasso.
+o	Analysis and modeling of the gene expression data.
+o	Visualizations, such as the cross-validation error curve and important predictor variables.
+o	Discussion on the findings and their implications in the context of breast cancer.
+•	Technical documentation within the notebook detailing all methods, codes, and explanations.
+•	Submission of the notebook via Canvas by the specified deadline.
+
