@@ -1,0 +1,30 @@
+Overview
+This lab focuses on introducing you to Google Colab, data manipulation using pandas, and basic principles of linear regression analysis. You will explore data from a car dataset to understand relationships between variables and improve prediction models using various techniques.
+Goals
+•	Familiarize with Google Colab for data science tasks.
+•	Load and manipulate data within a dataframe.
+•	Construct and analyze regression models using sklearn.
+•	Explore methods to enhance linear regression models.
+Tasks
+1.	Setup and Data Loading:
+o	Upload the cars dataset (JSE_Car_Lab.csv) to Google Colab.
+o	Use pandas to read the dataset and prepare it for analysis.
+2.	Initial Regression Model:
+o	Perform a simple linear regression with Price as the dependent variable and Mileage as the independent variable.
+o	Evaluate the model using the coefficient, intercept, and Root Mean Square Error (RMSE).
+3.	Residual Analysis:
+o	Plot residuals against predicted prices to identify potential outliers.
+o	Investigate and potentially remove outliers to improve model accuracy.
+4.	Model Enhancement:
+o	Explore adding additional predictors and transformations (e.g., square of mileage) to the model.
+o	Consider categorizing cars (by brand or price range) and fitting separate models.
+o	Incorporate non-numerical variables using OneHotEncoder to handle categorical data.
+Deliverables
+•	A comprehensive Google Colab notebook that includes:
+o	Data loading and preprocessing steps.
+o	Regression analysis with initial model results.
+o	Residual plots and outlier analysis.
+o	Enhanced modeling techniques and their impact on model performance.
+•	Technical report within the notebook detailing all steps, observations, and conclusions.
+•	Submission of the notebook via Canvas by the due date.
+
