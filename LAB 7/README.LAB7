@@ -1,0 +1,28 @@
+Overview
+In Lab 7, you will build and train neural networks using PyTorch to classify handwritten digits from the ZIP code dataset. This lab involves constructing both simple and complex neural network architectures, including convolutional neural networks (CNNs), to recognize the numbers in images.
+Objectives
+•	Develop neural networks capable of classifying images of handwritten digits.
+•	Implement and compare different neural network architectures, including CNNs.
+•	Gain practical experience with image data preprocessing and visualization using PyTorch.
+Tasks and Instructions
+Exercise 1: Simple Neural Network
+•	Data Loading: Load and preprocess the training and test datasets from zip.train and zip.test. Ensure the images are correctly reshaped and visualize some examples using matplotlib.
+•	Model Training: Train a neural network with one or more linear layers. You can start with a simple architecture similar to previous labs.
+•	Evaluation: Measure the accuracy of your model on the test set. Aim to achieve at least 98% accuracy.
+Exercise 2: Convolutional Neural Network (CNN)
+•	Architecture: Build a CNN model that includes:
+o	At least one convolutional layer with multiple filters.
+o	Max pooling to reduce spatial dimensions.
+o	Linear layers at the end to perform classification.
+•	Forward Pass: Implement the forward pass to include convolution operations, activation functions, and pooling layers, ensuring the input to each layer is correctly sized.
+•	Training and Testing: Train your CNN on the training data and evaluate its performance on the test set.
+Deliverables
+•	A detailed Jupyter Notebook containing:
+o	Code for loading and preprocessing data.
+o	Implementations of the neural network models.
+o	Training procedures and accuracy evaluations.
+•	A brief report within the notebook discussing:
+o	The architecture of each model.
+o	Performance comparisons and insights on the effectiveness of CNNs for image classification tasks.
+•	Visualizations of training progress and example predictions to illustrate the models' capabilities.
+
