@@ -1,0 +1,31 @@
+Overview
+In Lab 8, you will explore the application of Support Vector Machines (SVMs) on both artificial and real datasets. You will generate a two-dimensional dataset to understand how SVMs classify data into separable categories, and then apply SVM techniques to classify handwritten digits from the ZIP code dataset.
+Objectives
+•	Understand the mechanics of SVMs through practical application.
+•	Demonstrate SVM's capability on a synthetic dataset with clear class separation.
+•	Apply SVM to a real-world problem involving image classification.
+Tasks and Instructions
+Problem 1: SVM on Artificial Data
+•	Data Generation:
+o	Create a 2D dataset X with two distinct clusters. You can use numpy.random.multivariate_normal with different means for each cluster and identity matrices for covariance.
+o	Generate an associated label vector y with values +1 and -1 indicating the cluster membership of each data point.
+•	Model Training:
+o	Train an SVM classifier using sklearn.svm.SVC with a linear kernel on the dataset.
+•	Visualization:
+o	Plot the dataset and the decision boundary determined by the SVM. Highlight the support vectors and ensure the decision boundary maximizes the margin between the two clusters.
+Problem 2: SVM on Handwritten Digits
+•	Data Preparation:
+o	Load the zip.train and zip.test datasets which contain grayscale images of handwritten digits along with their labels.
+•	Model Training and Selection:
+o	Train an SVM model on the training data. Use GridSearchCV to find the optimal value for the regularization parameter C.
+•	Evaluation:
+o	Assess the performance of the SVM model on the test set by calculating its accuracy.
+Deliverables
+•	A comprehensive Jupyter Notebook containing:
+o	Code for all tasks including data generation, model training, and evaluation.
+o	Plots showing the SVM decision boundaries for the artificial dataset and any relevant visualizations for the real dataset.
+•	A report within the notebook that discusses:
+o	The SVM configurations tested and the rationale behind chosen parameters.
+o	Observations from the model performance on both the synthetic and real datasets.
+o	Challenges encountered during the lab and how they were addressed.
+
